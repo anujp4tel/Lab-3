@@ -175,6 +175,7 @@ img{
     grid-row: 15/20;   
     padding: 2em 2em 3em 2em;  
 }
+.bottom-navigation{display: none;}
 .footer{display: none;}
 @media screen and (min-width: 600px) and (max-width: 1000px){
     .main-area {
@@ -210,6 +211,7 @@ img{
         display: inline;
         padding: 3em;
     }
+    .bottom-navigation{display: none;}
     .footer{display: none;}
     img{width: 100%;}
     
