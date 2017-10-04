@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab-2</title>
+    <link rel="stylesheet" type ="text/css" href="style.css" />
+</head>
+<body>
+        <header id="top" class="header">
+            <div class="site-branding">
+                <h1 class="title">&lt;/&gt;Web Dev Submit 2017</h1>
+                <p class="date">September 26, 2017</p>
+            </div>
+        </header>
+    
+        <main class="main-area">
+                <div id ="one" class="one">Join our team for a jam-packed day of technical
+                    sessions looking at what's new, and what's next, for the web.
+                </div>
+                <div id ="two" class="two">Learn about dozens of new tools for your
+                    sites, from Grid Layout to MVC to Angular
+                    Go hands on professional engineers to debug
+                    issues and optimize performance
+                </div>
+                <div id="nav" class="nav">
+                    <div id="myDropdown" class="navigationcontent">
+                        <a href="#three">What to expect</a> 
+                        <a href="#four">Tracks</a>
+                        <a href="#nine">Agenda</a>
+                        <a href="#top">Back to top</a>
+                    </div>          
+                </div>
+                
+                <div class="image"><img src="web_dev.jpg"></div>
+    
+                <div id = "three" class="three">
+                    <h2>What to expect</h2>
+                    <h5>25 technical sessions</h5>
+                    The main track is 25 exciting technical sessions,
+                    covering everything from performance, accessibility,
+                    testing and security using the lastest tools and APIs
+                    for building Progressive Web Apps.
+                    Add payments and virtual reality to your sites, and
+                    build modern layouts with new CSS features like
+                    CSS Grid
+                </div>
+    
+                <div id="four" class="four">
+                    <h2>Tracks</h2>
+                    This year, you can meet with engineers from Microsoft, Google, Facebook, and Twitter who can help you to solve real problems today, and build invaluable connections for the future. 
+                    Looking to reduce a troublesome performance issue? Struggling with best practices for accessibility? Eager to get started with VR? Curious about Angular and React? We've got you covered. These tracks connects you one-to-one with engineers throughout the day and get results you can take back to your site or app.             </div>
+    
+                <div class="five">
+                    <h2><img src="Debug-26.png" align="top" style="width:40px;height:40px;"> Debug</h2>
+                    Struggling with JavaScript bugs? Looking for test guidance? Need help 
+                    with legacy compatibility? Our engineers are passionate about making the
+                    web work for all our mutual customers, and we want to help. Grab a drink
+                    at the Debug Bar and we'll take a look!                
+                </div>
+    
+                <div class="six">
+                    <h2><img src="performance.png" align="top" style="width:40px;height:40px;"> Performance</h2>
+                    Web performance is hard but we can help! Show us your site and we'll apply the same tools we use to build our advanced applications. Our team has of experiencing helping properties around the world identify and remediate performance pitfalls across browsers, so your customers have a better experience on every device. We'll provide actionable recommendations for your site, and opportunities to follow up with a deeper conversation with our developers.
+                    
+                </div>
+    
+                <div class="seven">
+                    <h2><img src="security.png" align="top" style="width:40px;height:40px;"> Security</h2>
+                    New security tools are here! Learn the new specification and how to apply them to make your web apps hack proof. Come try out live attack lab and see how your site holds up. Learn more about building sites which incorporate authentication and authorization on both the client and server and see how you can get started developing the most secure apps on the planet no previous experience required!
+                        
+                </div>
+        
+                <div class="eight">
+                    <h2><img src="viewmore-36.png" align="top" style="width:40px;height:40px;"> And More</h2>
+                    That's just the beginning! We're partnering with teams across the industry to deliver opportunities for trying out new experiences and learn about new tools. We'll have representatives from GitHub, Visual Studio, TypeScript, the brand-new .NET Core 2.0 framework, and more                
+                </div>
+                <div id = "nine" class="nine">
+                        <h2>Agenda</h2>
+                        <table class = "agenda">
+                                <tr align="left">
+                                    <td class = "col-1">8:00</td>
+                                    <td class = "col-2">Registration and breakfast</td>
+                                </tr>
+                                <tr align="left">
+                                    <td class = "col-1">9:00</td>
+                                    <td class = "col-2">Keynote</td>
+                                </tr>
+                                <tr align="left">
+                                    <td class = "col-1">10:00-12:00</td>
+                                    <td class = "col-2">Sessions</td>
+                                </tr> 
+                                <tr align="left">
+                                        <td class = "col-1">12:00-1:00</td>
+                                        <td class = "col-2">Lunch</td>
+                                    </tr>
+                                    <tr align="left">
+                                        <td class = "col-1">1:00-5:00</td>
+                                        <td class = "col-2">Sessions</td>
+                                    </tr>
+                                    <tr align="left">
+                                        <td class = "col-1">5:00-7:00</td>
+                                        <td class = "col-2">Party!</td>
+                                 </tr> 
+                        </table>    
+                </div>
+                <div id = "bottom-navigation" class="bottom-navigation">
+                        <a href="javascript:scrollToItem(document.getElementById('three'));">What to expect</a> <br>
+                        <a href="javascript:scrollToItem(document.getElementById('four'));">Tracks</a><br>
+                        <a href="javascript:scrollToItem(document.getElementById('nine'));">Agenda</a><br>
+                        <a href="javascript:scrollToItem(document.getElementById('top'));">Back to top</a>
+                    </div>
+        
+         </main>
+         <footer id="footer" class="footer">
+                <a href="javascript:showHide();">Show Menu</a>
+                
+        </footer>
+        <script>
+                function showHide() {
+                    var x = document.getElementById('bottom-navigation');
+                    if (x.style.display != 'block') {
+                        x.style.display = 'block';
+                        var maincontent = "<a href=\"javascript:showHide();\">Hide Menu</a>";
+                        document.getElementById("footer").innerHTML = "<a href=\"javascript:showHide();\">Hide Menu</a>";
+                    } else {
+                        x.style.display = 'none';
+                        document.getElementById("footer").innerHTML = "<a href=\"javascript:showHide();\">Show Menu</a>";
+                    }
+                    return false;
+                }
+            </script>
+            <script>
+                function scrollToItem(item) {
+                    var diff=(item.offsetTop-window.scrollY)/8;
+                    if (Math.abs(diff)>1) {
+                        window.scrollTo(0, (window.scrollY+diff));
+                        clearTimeout(window._TO);
+                        window._TO=setTimeout(scrollToItem, 30, item);
+                    } else {
+                        window.scrollTo(0, item.offsetTop);
+                    }
+                }
+            </script>
+    
+    </body>    
+</html>
